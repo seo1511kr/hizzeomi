@@ -1,3 +1,16 @@
+body{
+background-color: rgba(189,92,36,0.2);
+}
+.contents_detail img{
+width:800px;
+height:852.453px;
+}
+
+.bottom{
+text-align:center;}
+.contents{
+margin-top:0px;
+}
 audio {
   background-color: white;
   outline: none;
@@ -12,6 +25,12 @@ text-decoration:none !important;
 color:black;
 }
 
+.header img{
+
+width: 500px;
+margin-bottom:0px;
+}
+
 .header{
 display:grid;
 grid-template-columns: 20% 60% 20%;
@@ -22,7 +41,8 @@ margin-bottom:20px;
 width:100%;
 }
 
-.bottom{
+.bottom h4{
+margin-top:200px;
 }
 
 .item{
@@ -33,6 +53,6 @@ text-align: center;
 td{
 padding-left: 5px;
 padding-right: 5px;
-font-size: 12px;
+font-size: 15px;
 font-weight: 600;
 }
