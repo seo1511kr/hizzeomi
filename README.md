@@ -59,3 +59,7 @@ font stlye: 미정
 ### 5. pop up창으로 제작하고 싶은 굿즈 추천
 
 ### 6. 정적사이트, 동적사이트: 호스팅 및 도메인 연결
+
+### 7. work페이지 contents를 수정할 때 모든 detail page를 전부 수정해줘야함
+>>> javascript document.write()을 활용한 js파일을 만들어 js파일만 수정하면 전부 수정되도록 함
+>>> 하지만, css가 적용되지 않는 상황이 발생했음
