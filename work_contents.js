@@ -13,6 +13,11 @@ var messages=["poster, sweet home","poster, sweet home","poster, sweet home","po
 contents=document.querySelector(".contents");
 bottom=document.querySelector(".bottom");
 
+//addBtn=document.createElement("input");
+//addBtn.type=""
+
+
+
 for (i in art_list){
 div=document.createElement("div");
 div_items=document.createElement("div");
@@ -25,7 +30,7 @@ a.href="detail"+(parseInt(i)+1)+".html";
 span=document.createElement("span");
 img=document.createElement("img");
 img.src="art/"+art_list[i];
-img.style.width="200px";
+img.style.width="100%";
 h4=document.createElement("h4");
 title=document.createTextNode(titles[i]);
 txt=document.createTextNode(messages[i]);
