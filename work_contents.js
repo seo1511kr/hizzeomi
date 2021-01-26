@@ -20,6 +20,7 @@ bottom=document.querySelector(".bottom");
 
 for (i in art_list){
 div=document.createElement("div");
+div.className='base';
 div_items=document.createElement("div");
 div_items.className="items";
 
@@ -44,7 +45,7 @@ contents.appendChild(div);
 }
 
 
-document.body.insertBefore(contents,bottom);
+//document.body.insertBefore(contents,bottom);
 
 
 //<a href="detail1.html"><img src="art/art1.jpg"></a><h4>art1</h4><span>poster, sweet home</span>

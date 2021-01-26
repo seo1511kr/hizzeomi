@@ -36,8 +36,18 @@
         height:200px;
         margin-bottom:2px;
         }
-
-
+        input{
+        width:200px;
+        position: right;
+        }
+        #pw{
+        display:none;
+        float:left;
+        }
+        .new{
+        display:none;
+        float:left;
+        }
     </style>
 </head>
 <body>
@@ -64,8 +74,127 @@
         </div>
         <div class="bottom" ><h4>Hizzeomi & mandooboo</h4></div>
 
+        <span><input type="text" id="pw" style="width:200px;" onchange="
+if (this.value==940102){
+alert('작품 정보를 입력해주세요');
+var news=document.getElementsByClassName('new');
+for (i in news){
+news[i].style.display='block';
+}
+}
+else{
+alert('관리자 번호가 틀렸습니다');
+}
+">
+      <span><input type="text" class="new" value="파일명.확장자" onchange="
+var newwork=this.value;
+art_list.unshift(newwork);
+"></span>
+      <span><input type="text" class="new" value="제목" onchange="
+var newtitle=this.value;
+titles.unshift(newtitle);
+"></span>
+      <span><input type="text" class="new" value="설명" onchange="
+var newtext=this.value;
+messages.unshift(newtext);
+"></span>
+<span>
+    <input type="button" class="new" value="완료" onclick="
+
+div=document.createElement('div');
+alert('complete add1');
+
+div.className='base';
+alert('complete add2');
+
+
+
+
+a=document.createElement('a');
+alert('complete add3');
+
+a.href='detail'+art_list.length+'.html';
+alert('complete add4');
+
+span=document.createElement('span');
+alert('complete add5');
+
+img=document.createElement('img');
+alert('complete add6');
+
+img.src='art/'+art_list[0];
+alert('complete add7');
+
+img.style.width='100%';
+alert('complete add8');
+
+h4=document.createElement('h4');
+alert('complete add9');
+
+title=document.createTextNode(titles[0]);
+alert('complete add10');
+
+txt=document.createTextNode(messages[0]);
+alert('complete add11');
+
+a.appendChild(img);
+alert('complete add12');
+
+h4.appendChild(title);
+alert('complete add13');
+
+span.appendChild(txt);
+alert('complete add14');
+
+div.appendChild(a);
+alert('complete add15');
+
+div.appendChild(h4);
+alert('complete add16');
+
+div.appendChild(span);
+alert('complete add17');
+
+
+contents.appendChild(div);
+alert('complete add18');
+
+
+alert('complete add19');
+">
+</span>
+      <span><input type="button" value="add" onclick="
+alert('관리자만 접근 가능합니다');
+var input_pw=document.getElementById('pw');
+input_pw.style.display='block';
+"></span>
+
     </div>
 <script src="work_contents.js"></script>
 
 </body>
 </html>
+
+<!--
+var newDiv_items=document.createElement('div');
+newDiv_items.className='items';
+var newa=document.createElement('a');
+a.href='detail';
+var newimg=document.createElement('img');
+newimg.src='art/'+value;
+newimg.style.width='100%';
+var newh4=document.createElement('h4');
+var newspan=document.createElement('span');
+
+title=document.createTextNode(titles[i]);
+txt=document.createTextNode(messages[i]);
+
+a.appendChild(img);
+h4.appendChild(title);
+span.appendChild(txt);
+
+div.appendChild(a);
+div.appendChild(h4);
+div.appendChild(span);
+contents.appendChild(div);
+-->
